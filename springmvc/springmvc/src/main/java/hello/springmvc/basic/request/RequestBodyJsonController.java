@@ -31,5 +31,11 @@ public class RequestBodyJsonController {
         HelloData data = objectMapper.readValue(messageBody, HelloData.class);
         log.info("username={}, age={}", data.getUsername(), data.getAge());
         response.getWriter().write("ok");
+
+
+
+
     }
 }
+
+
